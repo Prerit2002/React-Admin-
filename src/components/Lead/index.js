@@ -5,6 +5,7 @@ function Lead(props) {
  
   const [percent, setPercentage] = useState(30)
   const [dealsss,setDeals] = useState(props.deals)
+  const salary = parseInt(props.salary)*parseInt(dealsss)*10000
   const handleclick = (e) => {
       e.preventDefault();
       const a = parseInt(percent);
@@ -39,7 +40,7 @@ function Lead(props) {
   <div class="pt-6 p-3 md:p-6 text-center flex-shrink  md:text-center space-y-4">
   <div class="md:grid grid-flow-col  text-left grid-rows-7 grid-cols-2   md:grid-cols-6 md:grid-rows-2 gap-4">
   <div>Name : {props.name}</div>
-  <div>Salary : {props.salary + percent*(props.salary) }</div>
+  <div>Salary : {salary  }</div>
   {/* <div className="w-1"></div>
   <div className="w-1"></div> */}
   {/* <div className="w-1 align-right"></div>

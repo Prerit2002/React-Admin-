@@ -4,6 +4,7 @@ import { PieChart } from 'react-minimal-pie-chart';
 function Commision(props) {
   const deals = props.deals
   const deal = parseInt(deals)*10
+  const salary = deals*parseInt(props.salary)*10000
 
     return (
         <div className="m-3">
@@ -46,7 +47,10 @@ function Commision(props) {
 
       </p>
       <p className="p-4">
-      Commision : {deal}%
+      Commision(%) : {deal}%
+      </p>
+      <p className="p-4">
+      Commision(₹) : {salary}
       </p>
    </blockquote>
            </div>

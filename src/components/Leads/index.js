@@ -15,6 +15,7 @@ export default function Leads() {
                     email={user.email}
                     id={user.id}
                     deals={user.deals}
+                    gender={user.gender}
 
                     
                     />
