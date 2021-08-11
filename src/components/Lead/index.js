@@ -39,14 +39,14 @@ function Lead(props) {
   
   <div class="pt-6 p-3 md:p-6 text-center flex-shrink  md:text-center space-y-4">
   <div class="md:grid grid-flow-col  text-left grid-rows-7 grid-cols-2   md:grid-cols-6 md:grid-rows-2 gap-4">
-  <div>Name : {props.name}</div>
-  <div>Salary : {salary  }</div>
+  <div>Name : <strong>{props.name}</strong></div>
+  <div>Salary :<strong>{salary }</strong> </div>
   {/* <div className="w-1"></div>
   <div className="w-1"></div> */}
   {/* <div className="w-1 align-right"></div>
   <div className="w-1"></div> */}
-  <div className="col-span-1 md:col-span-2 md:ml-3">Email  : {props.email}</div>
-  <div className="col-span-1 md:col-span-2 md:ml-3">Gender : {props.gender}</div>
+  <div className="col-span-1 md:col-span-2 md:ml-3">Email  : <strong>{props.email}</strong></div>
+  <div className="col-span-1 md:col-span-2 md:ml-3">Gender : <strong>{props.gender}</strong></div>
   
   
   <div className='flex p-2 md:mt-3  h-1.5 p-0.5 w-full bg-gray-200'>
@@ -66,7 +66,7 @@ function Lead(props) {
             
     </div>
         <div>
-            Deals Closed : {dealsss}
+            Deals Closed : <strong>{dealsss}</strong> 
         </div>
         <div >
         <button className="md:m-2 m-1 p-1   bg-blue-500 hover:bg-blue-700 text-xs text-white font-bold md:p-1 rounded" onClick={handleclick}>Update Progress({percent}%)</button>

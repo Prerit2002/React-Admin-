@@ -5,9 +5,9 @@ function User(props) {
     console.log(userdata)
     const [data , setData] = useState(userdata)
     const id = window.location.pathname.split("/");
-    console.log(id[2])
+   
     const user = data[id[2]-1]
-    console.log(user)
+    
     return (
        <div className="container">
            
@@ -51,7 +51,7 @@ function User(props) {
   ]}
 /> */}
             <div className="flex-1  rounded-lg  w-full h-1/2 cursor-pointer m-1 mb-3 bg-gradient-to-r from-blue-500 to-blue-100" >
-                <span className="text-3xl p-3 ">Deals Closed</span>
+                <span className="text-2xl p-3 ">Deals Closed</span>
                 <div className="flex m-10 items-centre" >
                     <span className="text-2xl p-5 ml-2 font-semibold">3</span>
                     {/* <span className="flex items-centre ml-5">
@@ -61,7 +61,7 @@ function User(props) {
                 </div>
             </div>
             <div className="flex-1 rounded-lg  w-full h-1/2 cursor-pointer m-1 mt-3 bg-gradient-to-r from-blue-400 to-yellow-100" >
-                <span className="text-4xl p-2">Attendance</span>
+                <span className="text-2xl p-2">Attendance</span>
                 <div className="flex m-10 items-centre" >
                     <span className="text-2xl p-3 font-semibold">93%</span>
                     {/* <span className="flex items-centre ml-5">
@@ -73,21 +73,21 @@ function User(props) {
 {/* <div className="bg-black">Hello</div>
 <div className="bg-grey-500">Hello</div> */}
             </div>
-    <div className="p-2 m-2  flex flex-col">
-    <div className="flex-1  rounded-lg  w-full h-1/2 cursor-pointer m-1 mb-3 bg-gradient-to-r from-blue-500 to-blue-100" >
+    <div className="p-2 m-2  flex flex-shrink flex-col">
+    <div className="flex-1  rounded-lg  w-5/6 h-1/2 cursor-pointer m-1 mb-3 bg-gradient-to-r from-blue-500 to-blue-100" >
                 <span className="text-2xl font-semibol  p-5">Avg Commision</span>
                 <div className="flex m-10 items-centre" >
-                    <span className="text-2xl p-3 font-semibold">25%</span>
+                    <span className="text-2xl  font-semibold">25%</span>
                     {/* <span className="flex items-centre ml-5">
                     -11.4 
                     </span> */}
          
                 </div>
             </div>
-            <div className="flex-1 rounded-lg  w-full h-1/2 cursor-pointer m-1 mt-3 bg-gradient-to-r from-blue-400 to-yellow-100" >
-                <span className="text-4xl p-2">Salary</span>
+            <div className="flex-1 rounded-lg  w-5/6 h-1/2 cursor-pointer m-1 mt-3 bg-gradient-to-r from-blue-400 to-yellow-100" >
+                <span className="text-2xl p-2">Salary</span>
                 <div className="flex m-10 items-centre" >
-                    <span className="text-2xl p-3 font-semibold">1000000</span>
+                    <span className="text-2xl  font-semibold">1000000</span>
                     {/* <span className="flex items-centre ml-5">
                         -11.4 
                     </span> */}

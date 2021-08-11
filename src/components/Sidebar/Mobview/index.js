@@ -12,7 +12,7 @@ export default function Mobview() {
           setIsNavOpen(shouldBeOpen());
         });
       }, []);
-      console.log(isNavOpen)
+      
     
      
     return(

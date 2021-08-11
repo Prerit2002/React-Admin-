@@ -12,7 +12,7 @@ export default function Mobbutton() {
           setIsNavOpen(shouldBeOpen());
         });
       }, []);
-      console.log(isNavOpen)
+      
     
      
     return(
